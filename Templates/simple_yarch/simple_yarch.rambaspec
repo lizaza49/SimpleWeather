@@ -1,0 +1,26 @@
+# Template information section
+name: "viper-yarch-realm"
+summary: "viper-yarch module template from Elizaveta Alekseeva"
+author: "Elizaveta Alekseeva"
+version: "0.0.1"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+
+- {name: Builder.swift, path: Code/builder.swift.liquid}
+- {name: DataFlow.swift, path: Code/dataflow.swift.liquid}
+- {name: Interactor.swift, path: Code/interactor.swift.liquid}
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
+- {name: ViewController.swift, path: Code/viewcontroller.swift.liquid}
+
+# View
+- {name: View/View.swift, path: Code/View/view.swift.liquid}
+
+# Provider
+- {name: Provider/Model.swift, path: Code/Provider/model.swift.liquid}
+- {name: Provider/Provider.swift, path: Code/Provider/provider.swift.liquid}
+
+# ViewModel
+- {name: ViewModel/ViewModel.swift, path: Code/ViewModel/viewmodel.swift.liquid}

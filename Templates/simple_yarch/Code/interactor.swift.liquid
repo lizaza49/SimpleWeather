@@ -1,0 +1,32 @@
+//
+//  {{ module_info.description }}
+//  Created by {{ developer.name }} on {{ date }}.
+//
+
+protocol {{ module_info.name }}BusinessLogic {
+	func initialState()
+}
+
+final class {{ module_info.name }}Interactor: {{ module_info.name }}BusinessLogic {
+	private let presenter: {{ module_info.name }}PresentLogic
+	private let provider: {{ module_info.name }}ProviderProtocol
+
+	init(presenter: {{ module_info.name }}PresentLogic, provider: {{ module_info.name }}ProviderProtocol = {{ module_info.name }}Provider()) {
+		self.presenter = presenter
+		self.provider = provider
+	}
+
+	// MARK: -
+
+	func initialState() {
+//		provider.fetchData { [weak self] (result) in
+//			guard let self = self else { return }
+//			switch result {
+//			case let .success(model):
+//				self.presenter.presentModel(response: {{ module_info.name }}.BaseLogic.Response(result: .success(model)))
+//			case let .failure(error):
+//				self.presenter.presentModel(response: {{ module_info.name }}.BaseLogic.Response(result: .failure(error)))
+//			}
+		}
+	}
+}

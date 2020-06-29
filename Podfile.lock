@@ -1,0 +1,76 @@
+PODS:
+  - Alamofire (5.2.1)
+  - IVCollectionKit (0.9.11)
+  - libwebp (1.1.0):
+    - libwebp/demux (= 1.1.0)
+    - libwebp/mux (= 1.1.0)
+    - libwebp/webp (= 1.1.0)
+  - libwebp/demux (1.1.0):
+    - libwebp/webp
+  - libwebp/mux (1.1.0):
+    - libwebp/demux
+  - libwebp/webp (1.1.0)
+  - ObjectMapper (4.2.0)
+  - Realm (5.1.0):
+    - Realm/Headers (= 5.1.0)
+  - Realm/Headers (5.1.0)
+  - RealmSwift (5.1.0):
+    - Realm (= 5.1.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRealm (3.0.0):
+    - RealmSwift (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/WebP (4.4.8):
+    - libwebp (< 2.0, >= 0.5)
+    - SDWebImage/Core
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - IVCollectionKit
+  - ObjectMapper
+  - RealmSwift (~> 5.0)
+  - RxCocoa (~> 5.0)
+  - RxRealm
+  - RxSwift (~> 5.0)
+  - SDWebImage/WebP
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IVCollectionKit
+    - libwebp
+    - ObjectMapper
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxRealm
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  IVCollectionKit: 5e1a2062fdfc3963750fce35f4625895f9ce1c58
+  libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Realm: bdea546851e37b4cf0a2400cef115c7c26fda488
+  RealmSwift: 70945aa168db93b215c460e9c8ef680261aa28af
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRealm: af7a3c857efd5a711c176f6df0d67418ad48293b
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: a140c1773ba5ed4826e163325a489324d2bde7e2
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,25 @@
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//
+
+import RealmSwift
+
+@objcMembers
+final class {{ module_info.name }}Model: Object, Decodable {
+	dynamic var name: String = ""
+
+	private enum {{ module_info.name }}CodingKeys: String, CodingKey {
+			 case name
+	}
+
+	 convenience init(name: String) {
+		self.init()
+		self.name = name
+	}
+
+	convenience required init(from decoder: Decoder) throws {
+		let container = try decoder.container(keyedBy: {{ module_info.name }}CodingKeys.self)
+		let name = try container.decode(String.self, forKey: .name)
+		self.init(name: name)
+	}
+}

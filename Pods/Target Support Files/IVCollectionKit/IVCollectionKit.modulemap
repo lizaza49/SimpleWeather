@@ -1,0 +1,6 @@
+framework module IVCollectionKit {
+  umbrella header "IVCollectionKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

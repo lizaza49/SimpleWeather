@@ -1,0 +1,16 @@
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//
+
+import Foundation
+
+protocol {{ module_info.name }}ProviderProtocol {
+	func fetchData(completion: @escaping (Result<{{ module_info.name }}Model, Error>) -> Void)
+}
+
+class {{ module_info.name}}Provider: {{ module_info.name }}ProviderProtocol {
+
+	func fetchData(completion: @escaping (Result<{{ module_info.name }}Model, Error>) -> Void) {
+	//	completion(.success({{ module_info.name }}Model(title: "{{ module_info.name }}Title")))
+	}
+}

@@ -1,0 +1,37 @@
+//
+//  {{ module_info.description }}
+//  Created by {{ developer.name }} on {{ date }}.
+//
+
+import UIKit
+
+protocol {{ module_info.name }}PresentLogic {
+	func presentModel(response: {{ module_info.name }}.BaseLogic.Response)
+	func showLoadingIndicator()
+	func hideLoadingIndicator()
+}
+
+final class {{ module_info.name }}Presenter: {{ module_info.name }}PresentLogic {
+
+	weak var viewController: {{ module_info.name }}ViewLogic?
+
+// MARK: -
+
+	func presentModel(response: {{ module_info.name }}.BaseLogic.Response) {
+		switch response.result {
+		case let .failure(error):
+			viewController?.display(viewState: .error(message: error.localizedDescription))
+
+		case let .success(result):
+			viewController?.display(viewState: .result({{ module_info.name }}ViewModel(model: result)))
+		}
+	}
+
+	func showLoadingIndicator() {
+		viewController?.display(viewState: .loading)
+	}
+
+	func hideLoadingIndicator() {
+		viewController?.display(viewState: .stopLoading)
+	}
+}
